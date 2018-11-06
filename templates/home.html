@@ -20,8 +20,7 @@
                    style="border: 1px solid green; padding:5px; border-radius: 2px; cursor: pointer;">
         </form>
   <hr>
-  {% load static %}
-  <img src="{% static "test.png" %}" alt="My image">
+  <img src="static/{{fil_model.img_name}}">
 
 {% else %}
   <a href="{% url 'login' %}">login</a>

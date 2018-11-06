@@ -28,10 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 LOGIN_REDIRECT_URL = '/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-
-]
+STATICFILES_ROOT = os.path.join(BASE_DIR, "static")
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static"),
 
 STATIC_URL = '/static/'
 
